@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: a147ce31724f0c44f8208fa364171b6b
+guid: aa617afc9722eca4fb9554a0228b7de2
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4719254140122305566
-    second: main_menu_BG_0
+      213: -6270464514466627111
+    second: ArakDetailInfo_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: main_menu_BG_0
+      name: ArakDetailInfo_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1080
-        height: 720
+        width: 2630
+        height: 1308
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2ebe73dfc57d18eb0800000000000000
-      internalID: -4719254140122305566
+      spriteID: 9d146861fb5daf8a0800000000000000
+      internalID: -6270464514466627111
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      main_menu_BG_0: -4719254140122305566
+      ArakDetailInfo_0: -6270464514466627111
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

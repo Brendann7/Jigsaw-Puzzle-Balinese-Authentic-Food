@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 9b37abe1bcf6e854b958a098d5b8292c
+guid: 979971a54dd8f4b4192ea3567a282b5c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -691770937152251344
-    second: rujak_kuah_pindang_0
+      213: 1996401297661889809
+    second: MujairCardInfo_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: rujak_kuah_pindang_0
+      name: MujairCardInfo_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 672
-        height: 672
+        width: 730
+        height: 1120
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 03ad9117ff55666f0800000000000000
-      internalID: -691770937152251344
+      spriteID: 11d04402764a4bb10800000000000000
+      internalID: 1996401297661889809
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      rujak_kuah_pindang_0: -691770937152251344
+      MujairCardInfo_0: 1996401297661889809
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

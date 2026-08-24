@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: e941217e113c1af4a94974342bb10d8e
+guid: 264a1afb0478f874193d38339b1b98fd
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4769838180650015954
-    second: mujair nyatnyat_0
+      213: 8480568929406790598
+    second: RujakDetailInfo_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: mujair nyatnyat_0
+      name: RujakDetailInfo_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 2560
-        height: 2560
+        width: 2630
+        height: 1308
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2dc5db9bd8ed13240800000000000000
-      internalID: 4769838180650015954
+      spriteID: 6cba182628801b570800000000000000
+      internalID: 8480568929406790598
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      mujair nyatnyat_0: 4769838180650015954
+      RujakDetailInfo_0: 8480568929406790598
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
