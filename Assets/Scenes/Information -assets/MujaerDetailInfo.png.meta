@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: d1c72a4f711614042b403ca7cff1f471
+guid: c735b8c71b578944aa63a88073bfae91
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3546543555547445688
-    second: croptop_0
+      213: -7417143547867458265
+    second: MujaerDetailInfo_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: croptop_0
+      name: MujaerDetailInfo_0
       rect:
         serializedVersion: 2
-        x: 62
-        y: 91
-        width: 339
-        height: 539
+        x: 0
+        y: 0
+        width: 2630
+        height: 1308
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8b93bd8c29ad73130800000000000000
-      internalID: 3546543555547445688
+      spriteID: 725974dad33011990800000000000000
+      internalID: -7417143547867458265
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      croptop_0: 3546543555547445688
+      MujaerDetailInfo_0: -7417143547867458265
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
