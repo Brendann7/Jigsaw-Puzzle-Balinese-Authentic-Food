@@ -16,6 +16,22 @@ public class SceneChanger : MonoBehaviour
         SceneManager.LoadScene("level selection");
     }
 
+    public void GoToLevel1()
+    {
+        // Pastikan nama scene sesuai dengan yang ada di Build Settings
+        SceneManager.LoadScene("level 1");
+    }
+    public void GoToLevel2()
+    {
+        // Pastikan nama scene sesuai dengan yang ada di Build Settings
+        SceneManager.LoadScene("level 2");
+    }
+    public void GoToLevel3()
+    {
+        // Pastikan nama scene sesuai dengan yang ada di Build Settings
+        SceneManager.LoadScene("level 3");
+    }
+
     public void GoToInformation()
     {
         // Pastikan nama scene sesuai dengan yang ada di Build Settings
