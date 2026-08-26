@@ -4,6 +4,12 @@ using UnityEngine.SceneManagement;
 
 public class SceneChanger : MonoBehaviour
 {
+    public void GoToMainMenu()
+    {
+        // Pastikan nama scene sesuai dengan yang ada di Build Settings
+        SceneManager.LoadScene("MainMenu");
+    }
+
     public void GoToLevelSelection()
     {
         // Pastikan nama scene sesuai dengan yang ada di Build Settings
