@@ -67,13 +67,6 @@ public class GameManager : MonoBehaviour
         popupInformation.SetActive(true);
     }
 
-    // Pasang di tombol "GOT IT" pada Popup_Information
-    public void GoToLevelSelection()
-    {
-        // Pastikan nama scene sesuai dengan yang ada di Build Settings
-        SceneManager.LoadScene("level selection");
-    }
-
     // --- FUNGSI LOGIKA PUZZLE ---
 
     // Akan dipanggil otomatis oleh potongan puzzle yang benar letaknya
