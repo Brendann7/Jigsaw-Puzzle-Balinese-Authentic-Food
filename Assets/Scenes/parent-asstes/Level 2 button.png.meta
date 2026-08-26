@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 91aafbf9b10c4dd429f454459ff7e3fe
+guid: 409add6df22f2c847bf07db7c825044e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3951423321548095395
-    second: BG_GamePlay_0
+      213: 4448020671213173073
+    second: Level 2 button_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: BG_GamePlay_0
+      name: Level 2 button_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1640
-        height: 1240
+        width: 726
+        height: 1402
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3af711e439646d630800000000000000
-      internalID: 3951423321548095395
+      spriteID: 159714ddb3b8abd30800000000000000
+      internalID: 4448020671213173073
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      BG_GamePlay_0: 3951423321548095395
+      Level 2 button_0: 4448020671213173073
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
