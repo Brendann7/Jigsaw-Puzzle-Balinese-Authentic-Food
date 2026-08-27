@@ -60,8 +60,8 @@ public class AudioManager : MonoBehaviour
         if (popUpSound != null) sfxSource.PlayOneShot(popUpSound);
     }
 
-    public void PlayPronounceFood()
+    public void PlaySpecificSound(AudioClip clip)
     {
-        if (pronounceFoodSound != null) sfxSource.PlayOneShot(pronounceFoodSound);
+        if (clip != null) sfxSource.PlayOneShot(clip);
     }
 }

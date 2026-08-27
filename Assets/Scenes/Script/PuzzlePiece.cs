@@ -30,6 +30,7 @@ public class PuzzlePiece : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
 
     public void OnBeginDrag(PointerEventData eventData)
     {
+        AudioManager.instance.PlayDragPuzzle();
         if (isLocked) return; // Jika sudah di tempat yang benar, puzzle tidak bisa ditarik lagi
 
         // Pindahkan kepingan ini ke layer paling depan agar tidak tertutup puzzle lain
@@ -47,6 +48,7 @@ public class PuzzlePiece : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
 
     public void OnEndDrag(PointerEventData eventData)
     {
+        AudioManager.instance.PlayDropPuzzle();
         if (isLocked) return;
 
         canvasGroup.blocksRaycasts = true; // Nyalakan lagi deteksi klik

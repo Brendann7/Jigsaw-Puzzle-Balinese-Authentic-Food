@@ -84,6 +84,7 @@ public class GameManager : MonoBehaviour
     void FinishGame()
     {
         isTimerRunning = false; // Hentikan waktu
+        AudioManager.instance.PlayFinishGame();
         popupScore.SetActive(true); // Munculkan popup score
 
         // Tampilkan waktu akhir pengguna di popup score
