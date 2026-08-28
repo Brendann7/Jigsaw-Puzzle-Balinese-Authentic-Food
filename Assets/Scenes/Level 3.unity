@@ -6442,7 +6442,7 @@ MonoBehaviour:
   popupInstruction: {fileID: 1145611440}
   popupScore: {fileID: 328725438}
   popupInformation: {fileID: 1537701766}
-  popupGameOver: {fileID: 0}
+  popupGameOver: {fileID: 29541608}
   timerText: {fileID: 339808196}
   finalTimeText: {fileID: 1863287836}
   feedbackText: {fileID: 1143320274}
