@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
     [Header("Game UI & Timer")]
     public Text timerText; // Teks timer di atas tengah
     public Text finalTimeText; // Teks "USER TIME:" di popup score
+    public Text feedbackText;
 
     [Header("Puzzle Settings")]
     public int totalPieces = 10; // Ubah sesuai jumlah potongan puzzle kamu
@@ -109,15 +110,21 @@ public class GameManager : MonoBehaviour
             stars[0].SetActive(true);
             stars[1].SetActive(true);
             stars[2].SetActive(true);
+            if (feedbackText != null) feedbackText.text = "EXCELLENT!";
         }
         else if (currentTime <= 90f) // Kurang dari 1m 30s (2 Bintang)
         {
             stars[0].SetActive(true);
             stars[1].SetActive(true);
+            if (feedbackText != null) feedbackText.text = "GREAT JOB!";
         }
         else if (currentTime <= 120f) // Kurang dari 2 menit (1 Bintang)
         {
             stars[0].SetActive(true);
+            if (feedbackText != null) feedbackText.text = "NICE TRY!";
+        }
+        else {
+            if (feedbackText != null) feedbackText.text = "DON'T GIVE UP!";
         }
         // Jika lebih dari 2 menit, 0 bintang (tidak ada yang aktif)
     }
