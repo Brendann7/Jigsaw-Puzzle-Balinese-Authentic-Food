@@ -14,7 +14,7 @@ public class AudioManager : MonoBehaviour
     public AudioClip popUpSound;
     public AudioClip pronounceFoodSound;
 
-    private bool isMuted = false;
+    public bool isMuted = false;
 
     private void Awake()
     {

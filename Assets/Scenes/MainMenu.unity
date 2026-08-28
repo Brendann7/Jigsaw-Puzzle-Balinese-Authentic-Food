@@ -490,6 +490,7 @@ GameObject:
   - component: {fileID: 482653014}
   - component: {fileID: 482653017}
   - component: {fileID: 482653016}
+  - component: {fileID: 482653019}
   - component: {fileID: 482653015}
   - component: {fileID: 482653018}
   m_Layer: 5
@@ -562,9 +563,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 482653018}
-        m_TargetAssemblyTypeName: AudioCall, Assembly-CSharp
-        m_MethodName: ClickMute
+      - m_Target: {fileID: 482653019}
+        m_TargetAssemblyTypeName: MuteToggleUI, Assembly-CSharp
+        m_MethodName: TekanTombolMute
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -594,7 +595,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 6323059366111572591, guid: 1469ed61450a8e6478d603f12915626d, type: 3}
+  m_Sprite: {fileID: -3217711941033526594, guid: c3c2307cbf18d534992cf45a844bb223, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -624,6 +625,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6895437b337bf34da96257785df3eba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AudioCall
+--- !u!114 &482653019
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 482653013}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae20b5d35089f7b41abc4ec4864f55fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MuteToggleUI
+  iconImage: {fileID: 482653016}
+  soundOnSprite: {fileID: -3217711941033526594, guid: c3c2307cbf18d534992cf45a844bb223, type: 3}
+  soundOffSprite: {fileID: -7388286444644841503, guid: c3c2307cbf18d534992cf45a844bb223, type: 3}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -2225,6 +2241,7 @@ MonoBehaviour:
   finishGameSound: {fileID: 8300000, guid: ca52bfac7f66f7a409d7d1940cc2206c, type: 3}
   popUpSound: {fileID: 8300000, guid: 498327bc38a32e54cb250b6c0d275802, type: 3}
   pronounceFoodSound: {fileID: 0}
+  isMuted: 0
 --- !u!4 &1821937145
 Transform:
   m_ObjectHideFlags: 0

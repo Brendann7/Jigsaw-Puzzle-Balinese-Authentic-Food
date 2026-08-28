@@ -1,5 +1,5 @@
 using UnityEngine;
-using UnityEngine.UI; // Gunakan TMPro jika kamu pakai TextMeshPro
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
@@ -8,40 +8,52 @@ public class GameManager : MonoBehaviour
     public GameObject popupInstruction;
     public GameObject popupScore;
     public GameObject popupInformation;
+    public GameObject popupGameOver; 
 
     [Header("Game UI & Timer")]
-    public Text timerText; // Teks timer di atas tengah
-    public Text finalTimeText; // Teks "USER TIME:" di popup score
-    public Text feedbackText;
+    public Text timerText; 
+    public Text finalTimeText; 
+    public Text feedbackText; 
 
     [Header("Puzzle Settings")]
-    public int totalPieces = 10; // Ubah sesuai jumlah potongan puzzle kamu
+    public int totalPieces = 10;
     private int placedPieces = 0;
 
     [Header("Score Stars (Bintang)")]
-    public GameObject[] stars; // Masukkan 3 gambar bintang dari Popup_Score ke sini
+    public GameObject[] stars;
+
+    [Header("Game Rules & Star Thresholds")]
+    public float timeLimit = 90f; 
+    public float threeStarLimit = 40f; 
+    public float twoStarLimit = 65f; 
 
     private float currentTime = 0f;
     private bool isTimerRunning = false;
+    private bool isGameOver = false;
 
     void Start()
     {
-        // Alur pertama: Munculkan Instruction, sembunyikan yang lain
         popupInstruction.SetActive(true);
         popupScore.SetActive(false);
         popupInformation.SetActive(false);
+        if (popupGameOver != null) popupGameOver.SetActive(false);
 
         isTimerRunning = false;
         currentTime = 0f;
+        isGameOver = false;
     }
 
     void Update()
     {
-        // Jika timer berjalan, hitung waktu
-        if (isTimerRunning)
+        if (isTimerRunning && !isGameOver)
         {
             currentTime += Time.deltaTime;
             UpdateTimerUI();
+
+            if (currentTime >= timeLimit)
+            {
+                TriggerGameOver();
+            }
         }
     }
 
@@ -52,30 +64,24 @@ public class GameManager : MonoBehaviour
         timerText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
     }
 
-    // --- FUNGSI UNTUK TOMBOL-TOMBOL ---
-
-    // Pasang di tombol "NEXT" pada Popup_Instruction
     public void StartGame()
     {
         popupInstruction.SetActive(false);
-        isTimerRunning = true; // Mulai timer
+        isTimerRunning = true;
     }
 
-    // Pasang di tombol "NEXT" pada Popup_Score
     public void ShowInformation()
     {
         popupScore.SetActive(false);
         popupInformation.SetActive(true);
     }
 
-    // --- FUNGSI LOGIKA PUZZLE ---
-
-    // Akan dipanggil otomatis oleh potongan puzzle yang benar letaknya
     public void AddPlacedPiece()
     {
+        if (isGameOver) return; 
+
         placedPieces++;
 
-        // Cek apakah semua puzzle sudah terpasang
         if (placedPieces >= totalPieces)
         {
             FinishGame();
@@ -84,48 +90,49 @@ public class GameManager : MonoBehaviour
 
     void FinishGame()
     {
-        isTimerRunning = false; // Hentikan waktu
+        isTimerRunning = false;
+        isGameOver = true;
         AudioManager.instance.PlayFinishGame();
-        popupScore.SetActive(true); // Munculkan popup score
+        popupScore.SetActive(true);
 
-        // Tampilkan waktu akhir pengguna di popup score
         int minutes = Mathf.FloorToInt(currentTime / 60);
         int seconds = Mathf.FloorToInt(currentTime % 60);
-        finalTimeText.text = "USER TIME : " + string.Format("{0:00}:{1:00}", minutes, seconds);
+        if (finalTimeText != null) finalTimeText.text = "USER TIME : " + string.Format("{0:00}:{1:00}", minutes, seconds);
 
         CalculateStars();
     }
 
+    void TriggerGameOver()
+    {
+        isTimerRunning = false;
+        isGameOver = true;
+        if (popupGameOver != null) popupGameOver.SetActive(true);
+    }
+
     void CalculateStars()
     {
-        // Matikan semua bintang terlebih dahulu
         foreach (GameObject star in stars)
         {
-            star.SetActive(false);
+            if (star != null) star.SetActive(false);
         }
 
-        // Kalkulasi berdasarkan waktu (currentTime dalam detik)
-        if (currentTime <= 60f) // Kurang dari 1 menit (3 Bintang)
+        if (currentTime <= threeStarLimit) 
         {
-            stars[0].SetActive(true);
-            stars[1].SetActive(true);
-            stars[2].SetActive(true);
+            if (stars.Length > 0) stars[0].SetActive(true);
+            if (stars.Length > 1) stars[1].SetActive(true);
+            if (stars.Length > 2) stars[2].SetActive(true);
             if (feedbackText != null) feedbackText.text = "EXCELLENT!";
         }
-        else if (currentTime <= 90f) // Kurang dari 1m 30s (2 Bintang)
+        else if (currentTime <= twoStarLimit) 
         {
-            stars[0].SetActive(true);
-            stars[1].SetActive(true);
+            if (stars.Length > 0) stars[0].SetActive(true);
+            if (stars.Length > 1) stars[1].SetActive(true);
             if (feedbackText != null) feedbackText.text = "GREAT JOB!";
         }
-        else if (currentTime <= 120f) // Kurang dari 2 menit (1 Bintang)
+        else 
         {
-            stars[0].SetActive(true);
-            if (feedbackText != null) feedbackText.text = "NICE TRY!";
+            if (stars.Length > 0) stars[0].SetActive(true);
+            if (feedbackText != null) feedbackText.text = "GOOD TRY!";
         }
-        else {
-            if (feedbackText != null) feedbackText.text = "DON'T GIVE UP!";
-        }
-        // Jika lebih dari 2 menit, 0 bintang (tidak ada yang aktif)
     }
 }
