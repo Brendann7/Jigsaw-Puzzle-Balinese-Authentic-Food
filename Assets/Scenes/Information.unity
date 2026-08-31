@@ -502,13 +502,14 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Rujak Kuah Pindang is a legendary and beloved Balinese street food delicacy
-    that offers an unconventional yet exceptionally refreshing twist on traditional
-    fruit salads. It masterfully combines a vibrant assortment of fresh, crisp tropical
-    fruits with a savory, fish-based broth derived from boiled pindang stock. This
-    distinct flavor profile relies on a meticulous blend of fiery bird's eye chilies,
-    roasted shrimp paste, salt, and rich fish broth, creating an immediate explosion
-    of sour, sweet, spicy, and savory notes on the palate.
+  m_text: Arak Bali is a traditional and legendary alcoholic beverage native to the
+    Island of the Gods. It is meticulously distilled across generations using the
+    fermented sap of coconut palms, lontar palms, or red rice. The drink features
+    a distinct, robust aroma that instantly warms the body and has deeply rooted
+    cultural significance, serving as an essential element in traditional Balinese
+    rituals, ceremonies, and communal gatherings. In contemporary times, skilled
+    mixologists also utilize arak as a unique foundation for modern cocktails that
+    highlight authentic local flavors.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 48a8c59fe7748cc4fa84177fbb4956a1, type: 2}
   m_sharedMaterial: {fileID: 8399879538989277976, guid: 48a8c59fe7748cc4fa84177fbb4956a1, type: 2}
