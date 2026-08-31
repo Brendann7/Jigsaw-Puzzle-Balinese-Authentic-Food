@@ -6452,8 +6452,8 @@ MonoBehaviour:
   - {fileID: 589230389}
   - {fileID: 308235453}
   timeLimit: 90
-  threeStarLimit: 65
-  twoStarLimit: 75
+  threeStarTimeRemaining: 50
+  twoStarTimeRemaining: 30
 --- !u!4 &1758599124
 Transform:
   m_ObjectHideFlags: 0

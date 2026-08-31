@@ -777,8 +777,8 @@ MonoBehaviour:
   - {fileID: 1696869927}
   - {fileID: 2121904787}
   timeLimit: 50
-  threeStarLimit: 30
-  twoStarLimit: 40
+  threeStarTimeRemaining: 30
+  twoStarTimeRemaining: 20
 --- !u!4 &257968384
 Transform:
   m_ObjectHideFlags: 0
@@ -2925,23 +2925,14 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
-    eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
-    in culpa qui officia deserunt mollit anim id est laborum.  Lorem ipsum dolor
-    sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-    laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-    in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-    occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
-    id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-    do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-    dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-    sunt in culpa qui officia deserunt mollit anim id est laborum.
+  m_text: Arak Bali is a traditional and legendary alcoholic beverage native to the
+    Island of the Gods. It is meticulously distilled across generations using the
+    fermented sap of coconut palms, lontar palms, or red rice. The drink features
+    a distinct, robust aroma that instantly warms the body and has deeply rooted
+    cultural significance, serving as an essential element in traditional Balinese
+    rituals, ceremonies, and communal gatherings. In contemporary times, skilled
+    mixologists also utilize arak as a unique foundation for modern cocktails that
+    highlight authentic local flavors.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 48a8c59fe7748cc4fa84177fbb4956a1, type: 2}
   m_sharedMaterial: {fileID: 8399879538989277976, guid: 48a8c59fe7748cc4fa84177fbb4956a1, type: 2}
@@ -2968,10 +2959,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 23.1
-  m_fontSizeBase: 36
+  m_fontSize: 23
+  m_fontSizeBase: 23
   m_fontWeight: 400
-  m_enableAutoSizing: 1
+  m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 1
