@@ -156,7 +156,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 255.99997, y: -64.80001}
+  m_AnchoredPosition: {x: 255.99997, y: -55.7}
   m_SizeDelta: {x: 241, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &57997839
@@ -314,7 +314,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 256, y: 3}
+  m_AnchoredPosition: {x: 256, y: 16}
   m_SizeDelta: {x: 241, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &257800632
@@ -516,7 +516,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -303.9, y: -228}
+  m_AnchoredPosition: {x: 319, y: 232}
   m_SizeDelta: {x: 66, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &482653015
@@ -855,6 +855,10 @@ MonoBehaviour:
     RefIds:
     - rid: -2
       type: {class: , ns: , asm: }
+    - rid: 5406677610441211904
+      type: {class: 'Provider2DCache`1[[UnityEngine.Rendering.Universal.Light2DProvider, Unity.RenderPipelines.Universal.2D.Runtime]]', ns: UnityEngine.Rendering.Universal, asm: Unity.RenderPipelines.Universal.2D.Runtime}
+      data:
+        m_Cache: []
     - rid: 7103879952436822016
       type: {class: Light2DProviderSources, ns: UnityEngine.Rendering.Universal, asm: Unity.RenderPipelines.Universal.2D.Runtime}
       data:
@@ -862,7 +866,7 @@ MonoBehaviour:
         m_SelectedSource:
           rid: -2
         m_Provider2DCache:
-          rid: -2
+          rid: 5406677610441211904
 --- !u!4 &619394802
 Transform:
   m_ObjectHideFlags: 0
@@ -912,7 +916,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -228, y: 31.899994}
+  m_AnchoredPosition: {x: -228, y: 65}
   m_SizeDelta: {x: 228, y: 289}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &661377624
@@ -1066,7 +1070,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -49, y: 56}
+  m_AnchoredPosition: {x: -49, y: 89.100006}
   m_SizeDelta: {x: 460.6969, y: 80.3667}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &802877652
@@ -1148,7 +1152,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 255.99997, y: -129}
+  m_AnchoredPosition: {x: 255.99997, y: -125}
   m_SizeDelta: {x: 241, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &810679601
@@ -1382,7 +1386,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -86.2, y: 8.799988}
+  m_AnchoredPosition: {x: -86.2, y: 41.899994}
   m_SizeDelta: {x: 380.2271, y: 41.8811}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &873910527
@@ -1956,12 +1960,12 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 661377623}
+  - {fileID: 802877651}
+  - {fileID: 873910526}
   - {fileID: 257800631}
   - {fileID: 57997838}
   - {fileID: 810679600}
   - {fileID: 1148794496}
-  - {fileID: 802877651}
-  - {fileID: 873910526}
   - {fileID: 482653014}
   m_Father: {fileID: 979745849}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
