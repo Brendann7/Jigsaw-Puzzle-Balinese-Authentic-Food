@@ -5,13 +5,14 @@ public class PuzzlePiece : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
 {
     [Header("Referensi")]
     public GameManager gameManager;
-    public RectTransform targetPosition; // Pasangkan area tempat puzzle ini seharusnya berada (bagian warna hitam di kiri)
-    public Canvas canvas; // Masukkan Canvas utamamu ke sini agar pergeseran mouse akurat
+    public RectTransform targetPosition; // Area tempat puzzle seharusnya berada
+    public Canvas canvas; // Masukkan Canvas utama ke sini
 
     [Header("Pengaturan Jarak Benar")]
     public float snapDistance = 50f; // Toleransi jarak agar puzzle otomatis menempel
 
     private RectTransform rectTransform;
+    private RectTransform canvasRectTransform;
     private CanvasGroup canvasGroup;
     private Vector2 startPosition; // Posisi awal puzzle di sebelah kanan
     private bool isLocked = false; // Menandakan puzzle sudah benar atau belum
@@ -20,7 +21,12 @@ public class PuzzlePiece : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
     {
         rectTransform = GetComponent<RectTransform>();
         
-        // Menambahkan CanvasGroup otomatis jika belum ada (berguna agar puzzle tidak bentrok klik saat diseret)
+        if (canvas != null)
+        {
+            canvasRectTransform = canvas.GetComponent<RectTransform>();
+        }
+
+        // Menambahkan CanvasGroup otomatis jika belum ada
         canvasGroup = GetComponent<CanvasGroup>();
         if (canvasGroup == null)
             canvasGroup = gameObject.AddComponent<CanvasGroup>();
@@ -30,8 +36,9 @@ public class PuzzlePiece : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
 
     public void OnBeginDrag(PointerEventData eventData)
     {
+        if (isLocked) return; // Jika sudah di tempat yang benar, abaikan
+
         AudioManager.instance.PlayDragPuzzle();
-        if (isLocked) return; // Jika sudah di tempat yang benar, puzzle tidak bisa ditarik lagi
 
         // Pindahkan kepingan ini ke layer paling depan agar tidak tertutup puzzle lain
         transform.SetAsLastSibling();
@@ -44,13 +51,16 @@ public class PuzzlePiece : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
 
         // Menggerakkan puzzle mengikuti mouse
         rectTransform.anchoredPosition += eventData.delta / canvas.scaleFactor;
+
+        // Batasi posisi agar tidak keluar dari area Canvas
+        ClampToCanvas();
     }
 
     public void OnEndDrag(PointerEventData eventData)
     {
-        AudioManager.instance.PlayDropPuzzle();
         if (isLocked) return;
 
+        AudioManager.instance.PlayDropPuzzle();
         canvasGroup.blocksRaycasts = true; // Nyalakan lagi deteksi klik
 
         // Hitung jarak antara posisi puzzle saat dilepas dengan posisi target benarnya
@@ -68,5 +78,32 @@ public class PuzzlePiece : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
             // JIKA SALAH: Kembalikan kepingan ke tempat semula di kanan
             rectTransform.anchoredPosition = startPosition;
         }
+    }
+
+    void ClampToCanvas()
+    {
+        if (canvasRectTransform == null) return;
+
+        // Ambil batas area (rect) dari Canvas
+        Rect canvasRect = canvasRectTransform.rect;
+        
+        // Ambil ukuran kepingan puzzle (RectTransform)
+        Vector2 sizeDelta = rectTransform.sizeDelta;
+        Vector2 pivot = rectTransform.pivot;
+
+        // Hitung batas minimal dan maksimal anchoredPosition di dalam Canvas
+        // Mempertimbangkan pivot kepingan puzzle agar tidak setengah keluar layar
+        float minX = canvasRect.xMin + (sizeDelta.x * pivot.x);
+        float maxX = canvasRect.xMax - (sizeDelta.x * (1 - pivot.x));
+        float minY = canvasRect.yMin + (sizeDelta.y * pivot.y);
+        float maxY = canvasRect.yMax - (sizeDelta.y * (1 - pivot.y));
+
+        Vector2 clampedPosition = rectTransform.anchoredPosition;
+
+        // Kunci posisi X dan Y agar tetap di dalam batas Canvas
+        clampedPosition.x = Mathf.Clamp(clampedPosition.x, minX, maxX);
+        clampedPosition.y = Mathf.Clamp(clampedPosition.y, minY, maxY);
+
+        rectTransform.anchoredPosition = clampedPosition;
     }
 }
