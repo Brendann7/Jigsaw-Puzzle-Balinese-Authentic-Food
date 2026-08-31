@@ -44,4 +44,15 @@ public class SceneChanger : MonoBehaviour
         // Pastikan nama scene sesuai dengan yang ada di Build Settings
         SceneManager.LoadScene("Credit");
     }
+
+    public void Quit()
+    {
+        // Keluar dari aplikasi saat di-build (PC/Android/dll)
+        Application.Quit();
+
+        // Menghentikan Play Mode jika sedang diuji di dalam Unity Editor
+        #if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+        #endif
+    }
 }

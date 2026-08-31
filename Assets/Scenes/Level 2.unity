@@ -2381,7 +2381,7 @@ MonoBehaviour:
   popupInstruction: {fileID: 1145611440}
   popupScore: {fileID: 1025973496}
   popupInformation: {fileID: 1427500621}
-  popupGameOver: {fileID: 0}
+  popupGameOver: {fileID: 1517272486}
   timerText: {fileID: 912606029}
   finalTimeText: {fileID: 751238671}
   feedbackText: {fileID: 1226504489}

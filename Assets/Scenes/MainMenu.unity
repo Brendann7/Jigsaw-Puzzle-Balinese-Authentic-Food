@@ -1697,13 +1697,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 442509749}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
+      - m_Target: {fileID: 442509752}
+        m_TargetAssemblyTypeName: SceneChanger, Assembly-CSharp
+        m_MethodName: Quit
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -2240,7 +2240,7 @@ MonoBehaviour:
   bgmSource: {fileID: 1821937143}
   sfxSource: {fileID: 1821937142}
   buttonSound: {fileID: 8300000, guid: 72b84229f928ddb479599fec5af8ffef, type: 3}
-  dragPuzzleSound: {fileID: 8300000, guid: 7e8a5d5c90819a34e8da713d4df51a54, type: 3}
+  dragPuzzleSound: {fileID: 8300000, guid: a76655fbf1be37746aa30ba2ca201afa, type: 3}
   dropPuzzleSound: {fileID: 8300000, guid: 59173c459f30a444faae87f80f1771fc, type: 3}
   finishGameSound: {fileID: 8300000, guid: ca52bfac7f66f7a409d7d1940cc2206c, type: 3}
   popUpSound: {fileID: 8300000, guid: 498327bc38a32e54cb250b6c0d275802, type: 3}
