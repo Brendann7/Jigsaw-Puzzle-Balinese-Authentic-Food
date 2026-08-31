@@ -502,23 +502,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
-    eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
-    in culpa qui officia deserunt mollit anim id est laborum.  Lorem ipsum dolor
-    sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-    laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-    in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-    occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
-    id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-    do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-    dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-    sunt in culpa qui officia deserunt mollit anim id est laborum.
+  m_text: Rujak Kuah Pindang is a legendary and beloved Balinese street food delicacy
+    that offers an unconventional yet exceptionally refreshing twist on traditional
+    fruit salads. It masterfully combines a vibrant assortment of fresh, crisp tropical
+    fruits with a savory, fish-based broth derived from boiled pindang stock. This
+    distinct flavor profile relies on a meticulous blend of fiery bird's eye chilies,
+    roasted shrimp paste, salt, and rich fish broth, creating an immediate explosion
+    of sour, sweet, spicy, and savory notes on the palate.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 48a8c59fe7748cc4fa84177fbb4956a1, type: 2}
   m_sharedMaterial: {fileID: 8399879538989277976, guid: 48a8c59fe7748cc4fa84177fbb4956a1, type: 2}
@@ -545,10 +535,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 23.1
-  m_fontSizeBase: 36
+  m_fontSize: 23
+  m_fontSizeBase: 23
   m_fontWeight: 400
-  m_enableAutoSizing: 1
+  m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 1
@@ -967,8 +957,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 313, y: 243.8064}
-  m_SizeDelta: {x: 84.0839, y: 68.3872}
+  m_AnchoredPosition: {x: 334, y: -243.14}
+  m_SizeDelta: {x: 58.223, y: 51.2518}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &347827955
 MonoBehaviour:
@@ -1145,8 +1135,8 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1979011579}
-  - {fileID: 2061002880}
   - {fileID: 2045480022}
+  - {fileID: 2061002880}
   - {fileID: 276660872}
   m_Father: {fileID: 979745849}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2129,8 +2119,8 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1200087772}
-  - {fileID: 1134221918}
   - {fileID: 1168029111}
+  - {fileID: 1134221918}
   - {fileID: 860548489}
   m_Father: {fileID: 979745849}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2322,7 +2312,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -313, y: 243.8064}
+  m_AnchoredPosition: {x: -313, y: 230}
   m_SizeDelta: {x: 84.0839, y: 65.5842}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &997720718
@@ -2515,8 +2505,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 313, y: 243.8064}
-  m_SizeDelta: {x: 84.0839, y: 68.3872}
+  m_AnchoredPosition: {x: 338.4, y: -241.71}
+  m_SizeDelta: {x: 60.17, y: 54.111}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1134221919
 MonoBehaviour:
@@ -2892,7 +2882,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -313, y: 243.8064}
+  m_AnchoredPosition: {x: -313, y: 230}
   m_SizeDelta: {x: 84.0839, y: 65.5842}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1200087773
@@ -3502,23 +3492,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
-    eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
-    in culpa qui officia deserunt mollit anim id est laborum.  Lorem ipsum dolor
-    sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-    laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-    in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-    occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
-    id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-    do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-    dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-    sunt in culpa qui officia deserunt mollit anim id est laborum.
+  m_text: Rujak Kuah Pindang is a legendary and beloved Balinese street food delicacy
+    that offers an unconventional yet exceptionally refreshing twist on traditional
+    fruit salads. It masterfully combines a vibrant assortment of fresh, crisp tropical
+    fruits with a savory, fish-based broth derived from boiled pindang stock. This
+    distinct flavor profile relies on a meticulous blend of fiery bird's eye chilies,
+    roasted shrimp paste, salt, and rich fish broth, creating an immediate explosion
+    of sour, sweet, spicy, and savory notes on the palate.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 48a8c59fe7748cc4fa84177fbb4956a1, type: 2}
   m_sharedMaterial: {fileID: 8399879538989277976, guid: 48a8c59fe7748cc4fa84177fbb4956a1, type: 2}
@@ -3545,10 +3525,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 23.1
-  m_fontSizeBase: 36
+  m_fontSize: 23
+  m_fontSizeBase: 23
   m_fontWeight: 400
-  m_enableAutoSizing: 1
+  m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 1
@@ -3983,23 +3963,15 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
-    eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
-    in culpa qui officia deserunt mollit anim id est laborum.  Lorem ipsum dolor
-    sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-    laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-    in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-    occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
-    id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-    do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-    dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-    sunt in culpa qui officia deserunt mollit anim id est laborum.
+  m_text: "Mujair Nyat-Nyat is an iconic culinary specialty originating from the
+    breathtaking highland region of Kintamani in Bali. The dish exclusively uses
+    fresh tilapia (mujair) harvested straight from the pristine waters of Lake Batur.
+    The cooking process involves simmering the fish with bumbu genep\u2014the signature
+    traditional Balinese rich spice paste containing a complex blend of aromatic
+    herbs and spices\u2014until the cooking liquid completely reduces, a local technique
+    known as nyat-nyat. This allows the potent spices to absorb deeply into every
+    fiber of the fish, resulting in a rich, spicy, and deeply savory taste that is
+    exceptionally satisfying when enjoyed alongside a plate of warm steamed rice.\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 48a8c59fe7748cc4fa84177fbb4956a1, type: 2}
   m_sharedMaterial: {fileID: 8399879538989277976, guid: 48a8c59fe7748cc4fa84177fbb4956a1, type: 2}
@@ -4026,10 +3998,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 23.1
-  m_fontSizeBase: 36
+  m_fontSize: 23
+  m_fontSizeBase: 23
   m_fontWeight: 400
-  m_enableAutoSizing: 1
+  m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 1
@@ -4512,7 +4484,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -313, y: 243.8064}
+  m_AnchoredPosition: {x: -313, y: 230}
   m_SizeDelta: {x: 84.0839, y: 65.5842}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1979011580
@@ -4638,8 +4610,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 313, y: 243.8064}
-  m_SizeDelta: {x: 84.0839, y: 68.3872}
+  m_AnchoredPosition: {x: 345.38187, y: -236.91908}
+  m_SizeDelta: {x: 46.8956, y: 42.5381}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2061002881
 MonoBehaviour:
