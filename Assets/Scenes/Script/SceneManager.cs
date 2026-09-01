@@ -1,56 +1,56 @@
 using UnityEngine;
-using UnityEngine.UI; // Gunakan TMPro jika kamu pakai TextMeshPro
+using UnityEngine.UI; // Use TMPro if you're using TextMeshPro
 using UnityEngine.SceneManagement;
 
 public class SceneChanger : MonoBehaviour
 {
     public void GoToMainMenu()
     {
-        // Pastikan nama scene sesuai dengan yang ada di Build Settings
+        // Make sure the scene name matches the one in Build Settings
         SceneManager.LoadScene("MainMenu");
     }
 
     public void GoToLevelSelection()
     {
-        // Pastikan nama scene sesuai dengan yang ada di Build Settings
+        // Make sure the scene name matches the one in Build Settings
         SceneManager.LoadScene("level selection");
     }
 
     public void GoToLevel1()
     {
-        // Pastikan nama scene sesuai dengan yang ada di Build Settings
+        // Make sure the scene name matches the one in Build Settings
         SceneManager.LoadScene("level 1");
     }
     public void GoToLevel2()
     {
-        // Pastikan nama scene sesuai dengan yang ada di Build Settings
+        // Make sure the scene name matches the one in Build Settings
         SceneManager.LoadScene("level 2");
     }
     public void GoToLevel3()
     {
-        // Pastikan nama scene sesuai dengan yang ada di Build Settings
+        // Make sure the scene name matches the one in Build Settings
         SceneManager.LoadScene("level 3");
     }
 
     public void GoToInformation()
     {
-        // Pastikan nama scene sesuai dengan yang ada di Build Settings
+        // Make sure the scene name matches the one in Build Settings
         SceneManager.LoadScene("Information");
     }
 
-    // Pasang di tombol "GOT IT" pada Popup_Information
+    // Attach this to the "GOT IT" button on Popup_Information
     public void GoToCredit()
     {
-        // Pastikan nama scene sesuai dengan yang ada di Build Settings
+        // Make sure the scene name matches the one in Build Settings
         SceneManager.LoadScene("Credit");
     }
 
     public void Quit()
     {
-        // Keluar dari aplikasi saat di-build (PC/Android/dll)
+        // Quit the application when built (PC/Android/etc.)
         Application.Quit();
 
-        // Menghentikan Play Mode jika sedang diuji di dalam Unity Editor
+        // Stop Play Mode when testing inside the Unity Editor
         #if UNITY_EDITOR
         UnityEditor.EditorApplication.isPlaying = false;
         #endif

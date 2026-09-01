@@ -1,5 +1,7 @@
 using UnityEngine;
 
+// Central audio singleton that plays background music and sound effects
+// for the whole game.
 public class AudioManager : MonoBehaviour
 {
     public static AudioManager instance;
@@ -18,6 +20,8 @@ public class AudioManager : MonoBehaviour
 
     private void Awake()
     {
+        // Standard singleton pattern: keep the first instance alive across scenes,
+        // destroy any duplicates
         if (instance == null)
         {
             instance = this;
@@ -29,6 +33,7 @@ public class AudioManager : MonoBehaviour
         }
     }
 
+    // Toggles global audio mute on/off
     public void ToggleMute()
     {
         isMuted = !isMuted;
@@ -60,6 +65,7 @@ public class AudioManager : MonoBehaviour
         if (popUpSound != null) sfxSource.PlayOneShot(popUpSound);
     }
 
+    // Plays an arbitrary clip passed in by the caller
     public void PlaySpecificSound(AudioClip clip)
     {
         if (clip != null) sfxSource.PlayOneShot(clip);

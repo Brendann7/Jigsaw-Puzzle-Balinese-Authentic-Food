@@ -3,10 +3,10 @@ using UnityEngine.SceneManagement;
 
 public class CreditManager : MonoBehaviour
 {
-    // Fungsi ini akan dipanggil saat tombol Back ditekan
+    // Called when the Back button is pressed
     public void GoBackToMenu()
     {
-        // Ganti "MainMenu" dengan nama scene tujuan kalian yang sebenarnya
+        // Replace "MainMenu" with your actual target scene name
         SceneManager.LoadScene("MainMenu"); 
     }
 }

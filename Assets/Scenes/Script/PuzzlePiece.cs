@@ -3,19 +3,19 @@ using UnityEngine.EventSystems;
 
 public class PuzzlePiece : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
 {
-    [Header("Referensi")]
+    [Header("References")]
     public GameManager gameManager;
-    public RectTransform targetPosition; // Area tempat puzzle seharusnya berada
-    public Canvas canvas; // Masukkan Canvas utama ke sini
+    public RectTransform targetPosition; // Area where the puzzle piece should end up
+    public Canvas canvas; // Assign the main Canvas here
 
-    [Header("Pengaturan Jarak Benar")]
-    public float snapDistance = 50f; // Toleransi jarak agar puzzle otomatis menempel
+    [Header("Correct Distance Settings")]
+    public float snapDistance = 50f; // Distance tolerance for the piece to auto-snap into place
 
     private RectTransform rectTransform;
     private RectTransform canvasRectTransform;
     private CanvasGroup canvasGroup;
-    private Vector2 startPosition; // Posisi awal puzzle di sebelah kanan
-    private bool isLocked = false; // Menandakan puzzle sudah benar atau belum
+    private Vector2 startPosition; // Piece's original position on the right side
+    private bool isLocked = false; // Whether the piece is already correctly placed
 
     void Awake()
     {
@@ -26,21 +26,21 @@ public class PuzzlePiece : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
             canvasRectTransform = canvas.GetComponent<RectTransform>();
         }
 
-        // Menambahkan CanvasGroup otomatis jika belum ada
+        // Automatically add a CanvasGroup if one doesn't already exist
         canvasGroup = GetComponent<CanvasGroup>();
         if (canvasGroup == null)
             canvasGroup = gameObject.AddComponent<CanvasGroup>();
 
-        startPosition = rectTransform.anchoredPosition; // Simpan posisi asal
+        startPosition = rectTransform.anchoredPosition; // Store the original position
     }
 
     public void OnBeginDrag(PointerEventData eventData)
     {
-        if (isLocked) return; // Jika sudah di tempat yang benar, abaikan
+        if (isLocked) return; // If already correctly placed, ignore
 
         AudioManager.instance.PlayDragPuzzle();
 
-        // Pindahkan kepingan ini ke layer paling depan agar tidak tertutup puzzle lain
+        // Move this piece to the front-most layer so it isn't covered by other pieces
         transform.SetAsLastSibling();
         canvasGroup.blocksRaycasts = false; 
     }
@@ -49,10 +49,10 @@ public class PuzzlePiece : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
     {
         if (isLocked) return;
 
-        // Menggerakkan puzzle mengikuti mouse
+        // Move the piece following the mouse/pointer
         rectTransform.anchoredPosition += eventData.delta / canvas.scaleFactor;
 
-        // Batasi posisi agar tidak keluar dari area Canvas
+        // Keep the piece within the Canvas bounds
         ClampToCanvas();
     }
 
@@ -61,21 +61,21 @@ public class PuzzlePiece : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
         if (isLocked) return;
 
         AudioManager.instance.PlayDropPuzzle();
-        canvasGroup.blocksRaycasts = true; // Nyalakan lagi deteksi klik
+        canvasGroup.blocksRaycasts = true; // Re-enable click/raycast detection
 
-        // Hitung jarak antara posisi puzzle saat dilepas dengan posisi target benarnya
+        // Compute the distance between the piece's drop position and its correct target position
         float distance = Vector2.Distance(rectTransform.anchoredPosition, targetPosition.anchoredPosition);
 
         if (distance <= snapDistance)
         {
-            // JIKA BENAR: Tempelkan ke tempat target, kunci, dan beri tahu GameManager
+            // CORRECT: snap to the target position, lock it, and notify the GameManager
             rectTransform.anchoredPosition = targetPosition.anchoredPosition;
             isLocked = true;
             gameManager.AddPlacedPiece();
         }
         else
         {
-            // JIKA SALAH: Kembalikan kepingan ke tempat semula di kanan
+            // INCORRECT: return the piece to its original position on the right
             rectTransform.anchoredPosition = startPosition;
         }
     }
@@ -84,15 +84,15 @@ public class PuzzlePiece : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
     {
         if (canvasRectTransform == null) return;
 
-        // Ambil batas area (rect) dari Canvas
+        // Get the Canvas's bounding rect
         Rect canvasRect = canvasRectTransform.rect;
         
-        // Ambil ukuran kepingan puzzle (RectTransform)
+        // Get the puzzle piece's size (RectTransform)
         Vector2 sizeDelta = rectTransform.sizeDelta;
         Vector2 pivot = rectTransform.pivot;
 
-        // Hitung batas minimal dan maksimal anchoredPosition di dalam Canvas
-        // Mempertimbangkan pivot kepingan puzzle agar tidak setengah keluar layar
+        // Compute the min/max anchoredPosition bounds within the Canvas,
+        // accounting for the piece's pivot so it doesn't go half off-screen
         float minX = canvasRect.xMin + (sizeDelta.x * pivot.x);
         float maxX = canvasRect.xMax - (sizeDelta.x * (1 - pivot.x));
         float minY = canvasRect.yMin + (sizeDelta.y * pivot.y);
@@ -100,7 +100,7 @@ public class PuzzlePiece : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
 
         Vector2 clampedPosition = rectTransform.anchoredPosition;
 
-        // Kunci posisi X dan Y agar tetap di dalam batas Canvas
+        // Clamp X and Y so the piece stays within the Canvas bounds
         clampedPosition.x = Mathf.Clamp(clampedPosition.x, minX, maxX);
         clampedPosition.y = Mathf.Clamp(clampedPosition.y, minY, maxY);
 

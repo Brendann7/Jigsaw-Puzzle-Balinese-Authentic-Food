@@ -37,6 +37,7 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
+        // Show only the instruction popup at the start, hide the rest
         popupInstruction.SetActive(true);
         popupScore.SetActive(false);
         popupInformation.SetActive(false);
@@ -66,6 +67,7 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    // Format and display the current countdown time as MM:SS
     void UpdateTimerUI()
     {
         int minutes = Mathf.FloorToInt(currentTime / 60);
@@ -73,6 +75,7 @@ public class GameManager : MonoBehaviour
         timerText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
     }
 
+    // Called when the player starts the game (e.g. from the instruction popup)
     public void StartGame()
     {
         popupInstruction.SetActive(false);
@@ -80,12 +83,14 @@ public class GameManager : MonoBehaviour
         isTimerRunning = true;
     }
 
+    // Switches from the score popup to the information popup
     public void ShowInformation()
     {
         popupScore.SetActive(false);
         popupInformation.SetActive(true);
     }
 
+    // Called by a puzzle piece when it snaps into its correct place
     public void AddPlacedPiece()
     {
         if (isGameOver) return; 
@@ -98,6 +103,7 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    // Called when all puzzle pieces have been placed correctly
     void FinishGame()
     {
         isTimerRunning = false;
@@ -117,6 +123,7 @@ public class GameManager : MonoBehaviour
         CalculateStars();
     }
 
+    // Called when the countdown timer reaches zero before the puzzle is finished
     void TriggerGameOver()
     {
         isTimerRunning = false;
@@ -124,8 +131,10 @@ public class GameManager : MonoBehaviour
         if (popupGameOver != null) popupGameOver.SetActive(true);
     }
 
+    // Determines how many stars the player earns based on remaining time
     void CalculateStars()
     {
+        // Reset all stars to hidden before recalculating
         foreach (GameObject star in stars)
         {
             if (star != null) star.SetActive(false);
