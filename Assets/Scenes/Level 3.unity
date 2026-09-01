@@ -2249,8 +2249,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -210.82806, y: -32.20929}
-  m_SizeDelta: {x: 218.5364, y: 244.8434}
+  m_AnchoredPosition: {x: -210, y: -0.0000095367}
+  m_SizeDelta: {x: 195.5187, y: 147.9483}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &666258975
 MonoBehaviour:
@@ -2273,13 +2273,13 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 612bb90b3d7d34f4e82c7b5efe0d0b05, type: 3}
-    m_FontSize: 36
+    m_Font: {fileID: 12800000, guid: 61f1303e78643cb4b9bf9248b18017da, type: 3}
+    m_FontSize: 23
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 100
-    m_Alignment: 4
+    m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -2715,8 +2715,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1052759456}
   m_HandleRect: {fileID: 1052759455}
   m_Direction: 2
-  m_Value: 1.0000007
-  m_Size: 0.33866015
+  m_Value: 1.0000024
+  m_Size: 0.6161256
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -3735,7 +3735,7 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 659956843}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.6613399}
+  m_AnchorMin: {x: 0, y: 0.38387442}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
@@ -5223,7 +5223,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: -0.00045776367}
-  m_SizeDelta: {x: 0, y: 644.019}
+  m_SizeDelta: {x: 0, y: 205.4745}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1457106305
 MonoBehaviour:
@@ -5245,23 +5245,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
-    eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
-    in culpa qui officia deserunt mollit anim id est laborum.  Lorem ipsum dolor
-    sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-    laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-    in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-    occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
-    id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-    do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-    dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-    sunt in culpa qui officia deserunt mollit anim id est laborum.
+  m_text: Rujak Kuah Pindang is a legendary and beloved Balinese street food delicacy
+    that offers an unconventional yet exceptionally refreshing twist on traditional
+    fruit salads. It masterfully combines a vibrant assortment of fresh, crisp tropical
+    fruits with a savory, fish-based broth derived from boiled pindang stock. This
+    distinct flavor profile relies on a meticulous blend of fiery bird's eye chilies,
+    roasted shrimp paste, salt, and rich fish broth, creating an immediate explosion
+    of sour, sweet, spicy, and savory notes on the palate.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 48a8c59fe7748cc4fa84177fbb4956a1, type: 2}
   m_sharedMaterial: {fileID: 8399879538989277976, guid: 48a8c59fe7748cc4fa84177fbb4956a1, type: 2}
@@ -5288,7 +5278,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 23.1
+  m_fontSize: 18
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1

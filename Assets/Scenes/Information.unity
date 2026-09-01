@@ -480,7 +480,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: -0.00045776367}
-  m_SizeDelta: {x: 0, y: 644.019}
+  m_SizeDelta: {x: 0, y: 144.5661}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &186645604
 MonoBehaviour:
@@ -3471,7 +3471,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: -0.00045776367}
-  m_SizeDelta: {x: 0, y: 644.019}
+  m_SizeDelta: {x: 0, y: 144.5661}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1746351814
 MonoBehaviour:
@@ -3942,7 +3942,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: -0.00045776367}
-  m_SizeDelta: {x: 0, y: 644.019}
+  m_SizeDelta: {x: 0, y: 185.3754}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1835384355
 MonoBehaviour:
@@ -3964,15 +3964,17 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Mujair Nyat-Nyat is an iconic culinary specialty originating from the
+  m_text: 'Mujair Nyat-Nyat is an iconic culinary specialty originating from the
     breathtaking highland region of Kintamani in Bali. The dish exclusively uses
     fresh tilapia (mujair) harvested straight from the pristine waters of Lake Batur.
-    The cooking process involves simmering the fish with bumbu genep\u2014the signature
+    The cooking process involves simmering the fish with bumbu genep the signature
     traditional Balinese rich spice paste containing a complex blend of aromatic
-    herbs and spices\u2014until the cooking liquid completely reduces, a local technique
+    herbs and spices until the cooking liquid completely reduces, a local technique
     known as nyat-nyat. This allows the potent spices to absorb deeply into every
     fiber of the fish, resulting in a rich, spicy, and deeply savory taste that is
-    exceptionally satisfying when enjoyed alongside a plate of warm steamed rice.\n"
+    exceptionally satisfying when enjoyed alongside a plate of warm steamed rice.
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 48a8c59fe7748cc4fa84177fbb4956a1, type: 2}
   m_sharedMaterial: {fileID: 8399879538989277976, guid: 48a8c59fe7748cc4fa84177fbb4956a1, type: 2}

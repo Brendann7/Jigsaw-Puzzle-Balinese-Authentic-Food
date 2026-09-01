@@ -1857,7 +1857,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: -0.00045776367}
-  m_SizeDelta: {x: 0, y: 644.019}
+  m_SizeDelta: {x: 0, y: 230.9651}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &654264969
 MonoBehaviour:
@@ -1879,15 +1879,17 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Mujair Nyat-Nyat is an iconic culinary specialty originating from the
+  m_text: 'Mujair Nyat-Nyat is an iconic culinary specialty originating from the
     breathtaking highland region of Kintamani in Bali. The dish exclusively uses
     fresh tilapia (mujair) harvested straight from the pristine waters of Lake Batur.
-    The cooking process involves simmering the fish with bumbu genep\u2014the signature
+    The cooking process involves simmering the fish with bumbu genep the signature
     traditional Balinese rich spice paste containing a complex blend of aromatic
-    herbs and spices\u2014until the cooking liquid completely reduces, a local technique
+    herbs and spices until the cooking liquid completely reduces, a local technique
     known as nyat-nyat. This allows the potent spices to absorb deeply into every
     fiber of the fish, resulting in a rich, spicy, and deeply savory taste that is
-    exceptionally satisfying when enjoyed alongside a plate of warm steamed rice.\n"
+    exceptionally satisfying when enjoyed alongside a plate of warm steamed rice.
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 48a8c59fe7748cc4fa84177fbb4956a1, type: 2}
   m_sharedMaterial: {fileID: 8399879538989277976, guid: 48a8c59fe7748cc4fa84177fbb4956a1, type: 2}
@@ -4335,8 +4337,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -210.82806, y: -32.20929}
-  m_SizeDelta: {x: 218.5364, y: 244.8434}
+  m_AnchoredPosition: {x: -210, y: -32}
+  m_SizeDelta: {x: 191.0923, y: 223.5964}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1317871622
 MonoBehaviour:
@@ -4359,13 +4361,13 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 612bb90b3d7d34f4e82c7b5efe0d0b05, type: 3}
-    m_FontSize: 36
+    m_Font: {fileID: 12800000, guid: 61f1303e78643cb4b9bf9248b18017da, type: 3}
+    m_FontSize: 23
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 100
-    m_Alignment: 4
+    m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
