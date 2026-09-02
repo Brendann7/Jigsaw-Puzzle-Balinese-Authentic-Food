@@ -217,7 +217,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 57327808}
         m_TargetAssemblyTypeName: MuteToggleUI, Assembly-CSharp
-        m_MethodName: TekanTombolMute
+        m_MethodName: PressMuteButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
